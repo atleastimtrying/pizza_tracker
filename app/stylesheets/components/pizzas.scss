@@ -1,0 +1,18 @@
+#pizzas{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .pizza{
+    flex: 1;
+    vertical-align: top;
+    max-width: 200px;
+    min-width: 150px;
+    background: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: $border-radius;
+    ul li{
+      list-style:none;
+    }
+  }
+}

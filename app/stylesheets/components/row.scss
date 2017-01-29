@@ -1,0 +1,17 @@
+.row{
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+
+  #display{
+    flex: 1;
+    background: #333;
+    overflow-y: scroll;
+  }
+
+  #form{
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+  }
+}

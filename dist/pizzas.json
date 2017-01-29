@@ -1,0 +1,16 @@
+{
+  "pizzas":[
+    { 
+      "name": "margeherita",
+      "ingredients": [ "cheese", "tomato" ]
+    },
+    { 
+      "name": "pepperoni",
+      "ingredients": [ "cheese", "pepperoni", "tomato" ]
+    },
+    { 
+      "name": "hawaiian",
+      "ingredients": [ "cheese", "tomato", "ham", "pineapple" ]
+    }
+  ]
+}

@@ -1,15 +1,18 @@
 {
   "pizzas":[
     { 
-      "name": "margeherita",
+      "id": 1,
+      "name": "Margherita",
       "ingredients": [ "cheese", "tomato" ]
     },
     { 
-      "name": "pepperoni",
+      "id": 2,
+      "name": "Pepperoni",
       "ingredients": [ "cheese", "pepperoni", "tomato" ]
     },
     { 
-      "name": "hawaiian",
+      "id": 3,
+      "name": "Hawaiian",
       "ingredients": [ "cheese", "tomato", "ham", "pineapple" ]
     }
   ]

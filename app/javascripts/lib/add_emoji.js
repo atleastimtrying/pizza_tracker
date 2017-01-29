@@ -2,14 +2,13 @@ const emoji = {
   cheese:    '🧀',
   tomato:    '🍅',
   pineapple: '🍍',
-  ham: '🐖',
-  tuna: '🐟',
-  chicken: '🐔',
-  beef: '🐄',
-  pepper: '🌶️',
-  bacon: '🍍',
-  sausage: '🌭',
-  mushroom: '🍄',
+  ham:       '🐖',
+  tuna:      '🐟',
+  chicken:   '🐔',
+  beef:      '🐄',
+  pepper:    '🌶️',
+  sausage:   '🌭',
+  mushroom:  '🍄',
 }
 
 const lookup = (name)=> emoji[name] ? `(${emoji[name]})` : '';

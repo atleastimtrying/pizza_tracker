@@ -7,10 +7,7 @@ var config = module.exports = {
   debug: true,
   context: __dirname,
   resolve: {
-    extensions: ['', '.jsx', '.js'],
-    alias: {
-      'webworkify': 'webworkify-webpack'
-    }
+    extensions: ['', '.jsx', '.js']
   },
   entry: './app/javascripts/entry.js',
   output:{
@@ -19,7 +16,6 @@ var config = module.exports = {
   },
   module: {
 
-    noParse: /node_modules\/localforage\/dist\/localforage.js/,
     preLoaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
@@ -32,20 +28,11 @@ var config = module.exports = {
       loaders: ['babel-loader?{presets:["es2015"]}']
     },
     {
-      test: /\.json$/,
-      loader: 'json-loader'
-    }, 
-    {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")
     }
-    ],
+    ]
 
-    postLoaders: [{
-      include: /node_modules\/mapbox-gl-shaders/,
-      loader: 'transform',
-      query: 'brfs'
-    }]
   },
   plugins: [
     new WebpackNotifierPlugin(),
